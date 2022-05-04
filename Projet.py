@@ -23,7 +23,7 @@ st.write(f"Dans cette situation, le montant versé en intérêts sera de: {coût
 
 
 
-import numpy-financial as npf
+import numpy_financial as npf
 
 st.write("Ce second programme permet de calculer le verment mensuel d'un emprunt")
 
