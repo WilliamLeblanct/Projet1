@@ -23,27 +23,3 @@ st.write(f"Dans cette situation, le montant versé en intérêts sera de: {coût
 
 
 
-import numpy_financial as npf
-
-st.write("Ce second programme permet de calculer le verment mensuel d'un emprunt")
-
-def pmt(taux,nb_années, Vn):
-    rate = taux
-    term = nb_années
-    loan_amount = Vn
-
-    return (npf.pmt(rate, term, -loan_amount))
-
-st.write(f"Dans cette situation, le montant versé chaque mois sera de: {pmt((taux/1200), nb_années*12, Vn):,.2f} $")
-
-
-
-
-def fv(taux,nb_années, Vn):
-    rate = taux
-    term = nb_années
-    loan_amount = Vn
-
-    return (npf.fv(rate, term, -loan_amount))
-
-st.write(f"Dans cette situation, le montant versé chaque mois sera de: {fv((taux), nb_années*12, Vn):,.2f} $")
